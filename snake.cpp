@@ -154,3 +154,16 @@ void Logic()
         nTail++;
     }
 }
+
+int main()
+{
+    Setup();
+    while (!gameOver)
+    {
+        Draw();
+        Input();
+        Logic();
+        Sleep(10); // Small sleep to make the game playable
+    }
+    return 0;
+}
